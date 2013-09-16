@@ -28,7 +28,7 @@ class CaptchaController < ApplicationController
     elsif orig_captcha == params[:captcha] then
       render :text => 'Matched! <a href="/" >back</a>'
     else
-      render :text => '1Wrong! <a href="/" >back</a>'
+      render :text => 'Wrong! <a href="/" >back</a>'
     end
   end
 end
