@@ -22,7 +22,7 @@ Installation:
 --------------------------------------------------------------------------------------------------
 Usage:
   check for captcha:
-    if session[:captcha] == params[:captcha] then
+    if flash[:captcha] == params[:captcha] then
 
   add captcha to a form:
     <%= render :partial => 'captcha/form' %>
