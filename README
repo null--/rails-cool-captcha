@@ -1,0 +1,34 @@
+Yet anothe ruby on rails captcha
+But its really simple and INDEPENDENT!
+If you are paranoid and sick of reCaptcha and those api-key-transaction bullshits, or if you have bigbrotherophibia then you should use this captcha!
+
+--------------------------------------------------------------------------------------------------
+Generate a captcha using cool-captcha directly (without any third party http connection or shit!)
+
+Requirments:
+  php5
+  php5-gd
+  rails
+
+--------------------------------------------------------------------------------------------------
+Installation:
+  copy app/controller/captcha_controller.rb to your project directory and change its permission to 755
+  copy app/view/captcha/_form.html.erb to/your/project/directory/app/view/captcha/
+  copy extra/ to your project folder
+  
+  edit config/routes.rb and add this line
+    map.connect "captcha/generate", :controller => 'captcha', :action => 'generate'
+
+--------------------------------------------------------------------------------------------------
+Usage:
+  check for captcha:
+    if session[:captcha] == params[:captcha] then
+
+  add captcha to a form:
+    <%= render :partial => 'captcha/form' %>
+
+---------------------------------------------------------------------------------------------------
+Test:
+  download this repo
+  # script/server
+

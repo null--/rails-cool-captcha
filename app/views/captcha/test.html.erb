@@ -1,0 +1,6 @@
+<% form_for @test, :url => {:controller => 'captcha', :action => 'test'} do |f| %>
+  <%= render :partial => 'captcha/form' %>
+  <p>
+    <%= f.submit 'Check!'%>
+  </p>
+<% end %>
