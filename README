@@ -21,8 +21,15 @@ Installation:
 
 --------------------------------------------------------------------------------------------------
 Usage:
-  check for captcha:
-    if flash[:captcha] == params[:captcha] then
+  check the captcha:    
+    orig_captcha = session[:captcha]
+    session.delete(:captcha) # extra security
+    
+    if orig_captcha == params[:captcha] then
+      render :text => "Matched!"
+    else
+      render :text => "Wrong!"
+    end
 
   add captcha to a form:
     <%= render :partial => 'captcha/form' %>

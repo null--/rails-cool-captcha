@@ -955,3 +955,79 @@ Processing CaptchaController#test (for 127.0.0.1 at 2013-09-16 15:06:44) [GET]
 Rendering captcha/test
 Rendered captcha/_form (0.1ms)
 Completed in 5ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing CaptchaController#test (for 127.0.0.1 at 2013-09-16 15:08:48) [GET]
+Rendering captcha/test
+Rendered captcha/_form (0.1ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing CaptchaController#test (for 127.0.0.1 at 2013-09-16 15:11:22) [GET]
+Rendering captcha/test
+Rendered captcha/_form (0.1ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing CaptchaController#generate (for 127.0.0.1 at 2013-09-16 15:11:22) [GET]
+Sending data 
+Completed in 41ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/captcha/generate]
+
+
+Processing CaptchaController#test (for 127.0.0.1 at 2013-09-16 15:12:16) [GET]
+Rendering captcha/test
+Rendered captcha/_form (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing CaptchaController#generate (for 127.0.0.1 at 2013-09-16 15:12:16) [GET]
+Sending data 
+Completed in 41ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/captcha/generate]
+
+
+Processing CaptchaController#test (for 127.0.0.1 at 2013-09-16 15:12:17) [GET]
+Rendering captcha/test
+Rendered captcha/_form (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing CaptchaController#generate (for 127.0.0.1 at 2013-09-16 15:12:17) [GET]
+Sending data 
+Completed in 37ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/captcha/generate]
+
+
+Processing CaptchaController#test (for 127.0.0.1 at 2013-09-16 15:12:22) [PUT]
+  Parameters: {"authenticity_token"=>"PjzRtr4qeUpjbaPg3/7K7SwGJV6r7Xc2EZWi6QEFI7s=", "commit"=>"Check!", "captcha"=>"wough"}
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/captcha/test]
+
+
+Processing CaptchaController#test (for 127.0.0.1 at 2013-09-16 15:16:39) [GET]
+Rendering captcha/test
+Rendered captcha/_form (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing CaptchaController#generate (for 127.0.0.1 at 2013-09-16 15:16:39) [GET]
+Sending data 
+Completed in 38ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/captcha/generate]
+
+
+Processing CaptchaController#test (for 127.0.0.1 at 2013-09-16 15:16:41) [PUT]
+  Parameters: {"authenticity_token"=>"PjzRtr4qeUpjbaPg3/7K7SwGJV6r7Xc2EZWi6QEFI7s=", "commit"=>"Check!", "captcha"=>"dsfs"}
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/captcha/test]
+
+
+Processing CaptchaController#test (for 127.0.0.1 at 2013-09-16 15:16:45) [PUT]
+  Parameters: {"authenticity_token"=>"PjzRtr4qeUpjbaPg3/7K7SwGJV6r7Xc2EZWi6QEFI7s=", "commit"=>"Check!", "captcha"=>"fluted"}
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/captcha/test]
+
+
+Processing CaptchaController#generate (for 127.0.0.1 at 2013-09-16 15:16:47) [GET]
+  Parameters: {"0.12351870806978194"=>nil}
+Sending data 
+Completed in 38ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/captcha/generate?0.12351870806978194]
+
+
+Processing CaptchaController#test (for 127.0.0.1 at 2013-09-16 15:16:51) [PUT]
+  Parameters: {"authenticity_token"=>"PjzRtr4qeUpjbaPg3/7K7SwGJV6r7Xc2EZWi6QEFI7s=", "commit"=>"Check!", "captcha"=>"unbitter"}
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/captcha/test]

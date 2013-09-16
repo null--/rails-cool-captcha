@@ -9,7 +9,7 @@ class CaptchaController < ApplicationController
 
     # extract captcha text
     captcha = raw_out[capt_pos + captag.length, raw_out.length]
-    flash[:captcha] = captcha
+    session[:captcha] = captcha
     
     # extract raw jpg
     raw_jpg = raw_out[0, capt_pos]
@@ -19,10 +19,13 @@ class CaptchaController < ApplicationController
 
   def test
     @test = ActiveRecord::Base
-
+    
+    orig_captcha = session[:captcha]
+    session.delete(:captcha)
+    
     if params[:captcha].nil? then
       return
-    elsif flash[:captcha] == params[:captcha] then
+    elsif orig_captcha == params[:captcha] then
       render :text => "Matched!"
     else
       render :text => "Wrong!"
