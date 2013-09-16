@@ -1,2 +1,0 @@
-rails-cool-captcha
-==================
